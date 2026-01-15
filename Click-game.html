@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Counter</title>
+</head>
+<body>
+
+<h2>Click Counter Game</h2>
+
+<p>Clicks: <span id="count">0</span></p>
+
+<button onclick="increase()">Click Me</button>
+<button onclick="resetCount()">Reset</button>
+
+<script>
+    var count = 0;
+ function increase() {
+        count++;
+        document.getElementById("count").innerHTML = count;
+    }
+
+    function resetCount() {
+        count = 0;
+        document.getElementById("count").innerHTML = count;
+    }
+</script>
+
+</body>
+</html>
